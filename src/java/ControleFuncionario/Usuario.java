@@ -1,6 +1,5 @@
 package ControleFuncionario;
 
-import controlefuncionario.Departamento;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -41,7 +40,7 @@ public class Usuario {
  */
 	public Usuario autenticarUsuario() throws ClassNotFoundException{				
 		Connection   con = Conexao.conectar();
-		Usuario usu = new Usuario();
+		Usuario usu = null;
 
 		String sql = "SELECT email FROM usuario WHERE email = ? and senha = ? ";
 		try {

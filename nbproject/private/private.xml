@@ -3,9 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/style/style.css</file>
-            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/scripts/script.js</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/autenticarUsuario.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/menu.html</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/src/java/ControleFuncionario/Usuario.java</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/usuarioNaoCadastrado.html</file>
             <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/index.html</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/signup.html</file>
         </group>
     </open-files>
 </project-private>

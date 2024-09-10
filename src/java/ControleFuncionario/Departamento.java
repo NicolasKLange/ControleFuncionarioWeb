@@ -1,4 +1,4 @@
-package controlefuncionario;
+package ControleFuncionario;
 
 
 import java.sql.Connection;

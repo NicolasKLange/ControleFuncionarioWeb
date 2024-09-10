@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departamento Screen</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/estiloLogin.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card card-login">
+          <div class="card-body">
+            <h2 class="card-title text-center">Departamento</h2>
+            
+            <form action="./Departamento/inserirDepto.jsp">
+              <div class="form-group">
+                <label for="username">Inserir Departamento</label>
+                <input type="text" id="descDepto" name="descDepto" class="form-control" placeholder="Digite o nome do departamento">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Inserir</button>
+              <button type="reset" class="btn btn-primary btn-block">Cancela</button>
+            </form>
+            <form action="./Departamento/excluirDepto.jsp">
+              <div class="form-group">
+                <label for="username">Exluir Departamento</label>
+                <input type="text" id="descDepto" name="descDepto" class="form-control" placeholder="Digite o id do departamento">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Exluir</button>
+              <button type="reset" class="btn btn-primary btn-block">Cancela</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
