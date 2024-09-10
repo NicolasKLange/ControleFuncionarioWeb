@@ -8,14 +8,14 @@
 <%
     int vIdDepto = Integer.parseInt(request.getParameter("idDepto"));
 
-
-    
     Departamento dep = new Departamento();
     dep.setIdDepto(vIdDepto);
-    dep.excluirDepartamento();
-    if (dep.excluirDepartamento()){   
-        response.sendRedirect("Departamento.jsp");
+
+    boolean excluiu = dep.excluirDepartamento();
+    if (excluiu) {
+        response.sendRedirect("menu.jsp");
+    } else {
+        response.sendRedirect("UsuarioNaoLogado.html");
     }
-
-
 %>
+

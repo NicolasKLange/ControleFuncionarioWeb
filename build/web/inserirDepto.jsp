@@ -6,15 +6,17 @@
 
 <%@page import="ControleFuncionario.Departamento"%>
 <%
-    String vDescDepto=  request.getParameter("descDepto");
+    String vDescDepto = request.getParameter("descDepto");
 
-    
     Departamento dep = new Departamento();
     dep.setDescDepto(vDescDepto);
-    dep.incluirDepto();
-    if (dep.incluirDepto()){   
-        response.sendRedirect("Departamento.html");
+
+    boolean inseriu = dep.incluirDepto(); 
+
+    if (inseriu) {   
+        response.sendRedirect("menu.jsp"); 
+    } else {
+        response.sendRedirect("UsuarioNaoLogado.html");
     }
-
-
 %>
+

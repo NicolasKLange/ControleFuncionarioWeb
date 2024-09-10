@@ -34,7 +34,7 @@
 <div id="wrapper" class="toggled">
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <li> <a href="../web/Departamento/Departamento.html">Departamento</a> </li>
+            <li> <a href="Departamento.html">Departamento</a> </li>
             <li> <a href="../web/Funcionario/Funcionario.jsp">Funcionario</a> </li>
             <li> <a href="../web/FolhaPagamento/folhaPagto.jsp">Folha Pagamento</a> </li>
             
