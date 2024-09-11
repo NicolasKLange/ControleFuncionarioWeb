@@ -105,6 +105,37 @@
                         <button type="reset" class="btn btn-secondary btn-block">Cancelar</button>
                     </form>
                     
+                    <!--  Consultar Funcionário -->
+                    <div class="table-container">
+                        <h4 class="text-center">Funcionários Cadastrados</h4>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>IdFunc</th>
+                                    <th>Nome</th>
+                                    <th>IdDepto</th>
+                                    <th>Salário Hora</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <%
+                                    Funcionario fun = new Funcionario();
+                                    List<Funcionario> lista = fun.listarFunc();
+
+                                    for (Funcionario d : lista) {
+                                %>
+                                <tr>
+                                    <td><%= d.getIdFunc()%></td>
+                                    <td><%= d.getNomeFunc()%></td>
+                                    <td><%= d.getIdDepto()%></td>
+                                    <td><%= d.getSalHora()%></td>
+                                </tr>
+                                <%
+                                    }
+                                %>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
