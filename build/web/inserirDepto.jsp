@@ -14,7 +14,7 @@
     boolean inseriu = dep.incluirDepto(); 
 
     if (inseriu) {   
-        response.sendRedirect("menu.jsp"); 
+        response.sendRedirect("Departamento.jsp"); 
     } else {
         response.sendRedirect("Departamento.jsp");
     }

@@ -14,7 +14,7 @@
     boolean excluiu = dep.excluirDepartamento();
     
     if (excluiu) {
-        response.sendRedirect("menu.jsp");
+        response.sendRedirect("Departamento.jsp"); 
     } else {
         response.sendRedirect("Departamento.jsp");
     }

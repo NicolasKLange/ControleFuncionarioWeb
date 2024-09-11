@@ -16,7 +16,7 @@
     boolean alterou = dep.alterarDepartamento(); 
 
     if (alterou) {   
-        response.sendRedirect("menu.jsp"); 
+        response.sendRedirect("Departamento.jsp"); 
     } else {
         response.sendRedirect("Departamento.jsp");
     }
