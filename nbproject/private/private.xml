@@ -3,16 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/Departamento/Departamento.html</file>
-            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/autenticarUsuario.jsp</file>
-            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/Departamento/inserirDepto.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/Departamento.html</file>
             <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/menu.jsp</file>
             <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/src/java/ControleFuncionario/Departamento.java</file>
-            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/src/java/ControleFuncionario/Usuario.java</file>
-            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/Usuario/cadastraUsuario.jsp</file>
-            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/index.html</file>
-            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/signup.html</file>
-            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/Departamento/excluirDepto.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/style/style.css</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/inserirDepto.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/style/estiloLogin.css</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/excluirDepto.jsp</file>
         </group>
     </open-files>
 </project-private>

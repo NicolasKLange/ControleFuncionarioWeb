@@ -12,10 +12,11 @@
     dep.setIdDepto(vIdDepto);
 
     boolean excluiu = dep.excluirDepartamento();
+    
     if (excluiu) {
         response.sendRedirect("menu.jsp");
     } else {
-        response.sendRedirect("UsuarioNaoLogado.html");
+        response.sendRedirect("Departamento.jsp");
     }
 %>
 

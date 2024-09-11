@@ -16,7 +16,7 @@
     if (inseriu) {   
         response.sendRedirect("menu.jsp"); 
     } else {
-        response.sendRedirect("UsuarioNaoLogado.html");
+        response.sendRedirect("Departamento.jsp");
     }
 %>
 

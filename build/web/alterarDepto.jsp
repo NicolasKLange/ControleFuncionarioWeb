@@ -1,22 +1,23 @@
 <%-- 
-    Document   : inserirDepto
-    Created on : 10 de set. de 2024, 08:52:12
+    Document   : alterarDepto
+    Created on : 11 de set. de 2024, 08:30:01
     Author     : nicolas_lange
 --%>
 
 <%@page import="ControleFuncionario.Departamento"%>
 <%
+    int vIdDepto = Integer.parseInt(request.getParameter("idDepto"));
     String vDescDepto = request.getParameter("descDepto");
 
     Departamento dep = new Departamento();
     dep.setDescDepto(vDescDepto);
+    dep.setIdDepto(vIdDepto);
 
-    boolean inseriu = dep.incluirDepto(); 
+    boolean alterou = dep.alterarDepartamento(); 
 
-    if (inseriu) {   
+    if (alterou) {   
         response.sendRedirect("menu.jsp"); 
     } else {
         response.sendRedirect("Departamento.jsp");
     }
 %>
-
