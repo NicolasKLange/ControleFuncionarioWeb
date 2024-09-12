@@ -5,19 +5,22 @@
 --%>
 
 <%@page import="ControleFuncionario.Funcionario"%>
+
+//FUNÇÃO PARA INCLUIR FUNCIONARIO
 <%
-    String vnomeFunc = request.getParameter("nomeFunc");
+    String vNomeFunc = request.getParameter("nomeFunc");
     int vIdDepto = Integer.parseInt(request.getParameter("idDepto"));
     double vSalHora = Double.parseDouble(request.getParameter("salHora"));
     
     Funcionario fun = new Funcionario();
     
-    fun.setNomeFunc(vnomeFunc);
+    fun.setNomeFunc(vNomeFunc);
     fun.setIdDepto(vIdDepto);
     fun.setSalHora(vSalHora);
 
     boolean inseriu = fun.incluirFunc(); 
-
+    
+    //VERIFICA SE DEU CERTO EM INCLUIR FUNCIONÁRIO
     if (inseriu) {   
         response.sendRedirect("Funcionario.jsp"); 
     } else {

@@ -4,41 +4,32 @@
     Author     : nicolas_lange
 --%>
 
+//IMPORTANDO LIBRARIES PARA LISTAR DEPARTAMENTOS
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
+
 <%@page import="ControleFuncionario.Funcionario"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        //TITULO DA PÁGINA
         <meta charset="UTF-8">
         <title>Controle de Funcionário</title>
         <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'>
         <link rel="stylesheet" href="style/style.css">
-
-        <style>
-           
-            .table-container {
-                border: 1px solid #ddd;
-                
-                margin-top: 20px;
-                border-radius: 10px;
-                background-color: #f9f9f9;
-            }
-            .table {
-                margin-bottom: 0;
-            }
-        </style>
     </head>
     <body>
         <header>
+            //VERIFICA SE USUÁRIO ESTÁ LOGADO
             <%
                 String email = (String) session.getAttribute("usuario");
                 if (email == null) {
                     response.sendRedirect("usuarioNaoLogado.html");
                 }
             %>
+            //MENU ESTILIZADO PARA CONTROLE DE FUNCIONÁRIOS
             <nav class="navbar navbar-expand navbar-dark bg-primary">
                 <div class="container-fluid">
                     <a href="menu.jsp" id="menu-toggle" class="navbar-brand"><span class="navbar-toggler-icon"></span></a>
@@ -58,6 +49,7 @@
                 </div>
             </nav>
         </header>
+        //MENU LATERAL PARA NAVEGAR ENTRE AS PRINCIPAIS FUNCIONALIDADES
         <div id="wrapper" class="toggled">
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
@@ -70,7 +62,7 @@
                 <div class="container-fluid">
                     <h2 class="card-title text-center">Funcionário</h2>
 
-                    <!-- Inserir Funcionário -->
+                    //INSERIR FUNCINARIO
                     <form action="inserirFunc.jsp">
                         <div class="form-group">
                             <label for="descDepto">Inserir Funcionário</label>
@@ -82,7 +74,7 @@
                         <button type="reset" class="btn btn-secondary btn-block">Cancelar</button>
                     </form>
 
-                    <!--  Excluir Funcionário -->
+                    //EXCLUIR FUNCIONARIO
                     <form action="excluirFunc.jsp" method="get">
                         <div class="form-group">
                             <label for="idFunc">Excluir Funcionário</label>
@@ -92,7 +84,7 @@
                         <button type="reset" class="btn btn-secondary btn-block">Cancelar</button>
                     </form>
 
-                    <!--  Alterar Funcionário -->
+                    //ALTERAR FUNCIONARIO
                     <form action="alterarFunc.jsp" method="get">
                         <div class="form-group">
                             <label for="idFunc">Alterar Funcionário</label>
@@ -104,8 +96,8 @@
                         <button type="submit" class="btn btn-primary btn-block">Alterar</button>
                         <button type="reset" class="btn btn-secondary btn-block">Cancelar</button>
                     </form>
-                    
-                    <!--  Consultar Funcionário -->
+
+                    //CONSULTAR FUNCIONARIOS
                     <div class="table-container">
                         <h4 class="text-center">Funcionários Cadastrados</h4>
                         <table class="table table-bordered">
@@ -117,6 +109,7 @@
                                     <th>Salário Hora</th>
                                 </tr>
                             </thead>
+                            //LISTA PARA CONSULTAR FUNCIONARIOS
                             <tbody>
                                 <%
                                     Funcionario fun = new Funcionario();
@@ -139,6 +132,19 @@
                 </div>
             </div>
         </div>
+        //STYLE PARA EDITAR TABELA DE CONSULTA DOS FUNCIONÁRIOS
+        <style>
+            .table-container {
+                border: 1px solid #ddd;
+
+                margin-top: 20px;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+            }
+            .table {
+                margin-bottom: 0;
+            }
+        </style>
     </body>
 </html>
 

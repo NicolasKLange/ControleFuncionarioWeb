@@ -5,6 +5,8 @@
 --%>
 
 <%@page import="ControleFuncionario.Departamento"%>
+
+//FUNÇÃO PARA ALTERAR DEPARTAMENTO
 <%
     int vIdDepto = Integer.parseInt(request.getParameter("idDepto"));
     String vDescDepto = request.getParameter("descDepto");
@@ -14,7 +16,8 @@
     dep.setIdDepto(vIdDepto);
 
     boolean alterou = dep.alterarDepartamento(); 
-
+    
+    //VERIFICA SE DEU CERTO EM ALTERAR FUNCIONÁRIO
     if (alterou) {   
         response.sendRedirect("Departamento.jsp"); 
     } else {

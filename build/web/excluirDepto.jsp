@@ -5,6 +5,8 @@
 --%>
 
 <%@page import="ControleFuncionario.Departamento"%>
+
+//FUNÇÃO PARA EXCLUIR DEPARTAMENTO
 <%
     int vIdDepto = Integer.parseInt(request.getParameter("idDepto"));
 
@@ -13,6 +15,7 @@
 
     boolean excluiu = dep.excluirDepartamento();
     
+    //VERIFICA SE DEU CERTO EM EXCLUIR FUNCIONÁRIO
     if (excluiu) {
         response.sendRedirect("Departamento.jsp"); 
     } else {

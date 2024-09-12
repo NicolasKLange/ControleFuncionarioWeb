@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SignUp Screen</title>
@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="estilos/estiloLogin.css">
 </head>
 <body>
+    //USUÁRIO CRIAR CONTA
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-md-4">
@@ -15,16 +16,18 @@
           <div class="card-body">
             <h2 class="card-title text-center">SignUp</h2>
             <form action="../web/Usuario/cadastraUsuario.jsp">
+                //INSERIR USERNAME
               <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="email" name= "email" class="form-control" placeholder="Digite seu username">
               </div>
+                //INSERIR SENHA
               <div class="form-group">
                 <label for="password">Senha:</label>
                 <input type="password" id="senha" name= "senha" class="form-control" placeholder="Digite sua senha">
               </div>
+                //BOTAO PARA SALVAR CONTA
               <button type="submit" class="btn btn-primary btn-block">Salvar</button>
-              
             </form>
           </div>
         </div>

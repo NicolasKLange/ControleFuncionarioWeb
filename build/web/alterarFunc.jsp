@@ -5,6 +5,8 @@
 --%>
 
 <%@page import="ControleFuncionario.Funcionario"%>
+
+//FUNÇÃO PARA ALTERAR FUNCIONARIO
 <%
     int vIdFunc = Integer.parseInt(request.getParameter("idFunc"));
     String vnomeFunc = request.getParameter("nomeFunc");
@@ -19,7 +21,8 @@
     fun.setSalHora(vSalHora);
 
     boolean alterou = fun.alterarFuncionario(); 
-
+    
+    //VERIFICA SE DEU CERTO EM ALTERAR FUNCIONÁRIO
     if (alterou) {   
         response.sendRedirect("Funcionario.jsp"); 
     } else {

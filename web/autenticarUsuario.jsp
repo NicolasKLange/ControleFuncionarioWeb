@@ -4,6 +4,7 @@
     Author     : Professor
 --%>
 
+//FUNCÃO PARA AUTENTICAR USUÁRIO AO SISTEMA 
 <%@page import="ControleFuncionario.Usuario"%>
 <%
     String vEmail =  request.getParameter("email");
@@ -14,14 +15,12 @@
     usu.setSenha(vSenha);
     
     usu = usu.autenticarUsuario();
-    if (usu != null){
     
-        // criar uma sessão para o uusário que está autenticado
+    //VERIFICA SE USUÁRIO POSSUI CONTA
+    if (usu != null){
         session.setAttribute("usuario", vEmail);
         response.sendRedirect("menu.jsp");
     } else {
         response.sendRedirect("usuarioNaoCadastrado.html");
     }
-
-
 %>
