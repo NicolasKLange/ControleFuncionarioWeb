@@ -6,18 +6,18 @@
 
 <%@page import="ControleFuncionario.Departamento"%>
 
-//FUNÇÃO PARA INCLUIR DEPARTAMENTO
+<!--FUNÇÃO PARA INCLUIR DEPARTAMENTO-->
 <%
     String vDescDepto = request.getParameter("descDepto");
 
     Departamento dep = new Departamento();
     dep.setDescDepto(vDescDepto);
 
-    boolean inseriu = dep.incluirDepto(); 
-    
+    boolean inseriu = dep.incluirDepto();
+
     //VERIFICA SE DEU CERTO EM INCLUIR DEPARTAMENTO
-    if (inseriu) {   
-        response.sendRedirect("Departamento.jsp"); 
+    if (inseriu) {
+        response.sendRedirect("Departamento.jsp");
     } else {
         response.sendRedirect("Departamento.jsp");
     }

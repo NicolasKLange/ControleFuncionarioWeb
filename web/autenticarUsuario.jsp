@@ -4,20 +4,20 @@
     Author     : Professor
 --%>
 
-//FUNCÃO PARA AUTENTICAR USUÁRIO AO SISTEMA 
+<!--FUNCÃO PARA AUTENTICAR USUÁRIO AO SISTEMA-->
 <%@page import="ControleFuncionario.Usuario"%>
 <%
-    String vEmail =  request.getParameter("email");
-    String vSenha =  request.getParameter("senha");
-    
+    String vEmail = request.getParameter("email");
+    String vSenha = request.getParameter("senha");
+
     Usuario usu = new Usuario();
     usu.setEmail(vEmail);
     usu.setSenha(vSenha);
-    
+
     usu = usu.autenticarUsuario();
-    
+
     //VERIFICA SE USUÁRIO POSSUI CONTA
-    if (usu != null){
+    if (usu != null) {
         session.setAttribute("usuario", vEmail);
         response.sendRedirect("menu.jsp");
     } else {

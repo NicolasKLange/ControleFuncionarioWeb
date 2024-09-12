@@ -4,7 +4,7 @@
     Author     : nicolas_lange
 --%>
 
-//IMPORTANDO LIBRARIES PARA LISTAR DEPARTAMENTOS
+<!-- IMPORTANDO LIBRARIES PARA LISTAR DEPARTAMENTOS -->
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 
@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        //TITULO DA PÁGINA
+        <!--TITULO DA PÁGINA-->
         <meta charset="UTF-8">
         <title>Controle de Funcionário</title>
         <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'>
@@ -22,14 +22,14 @@
     </head>
     <body>
         <header>
-            //VERIFICA SE USUÁRIO ESTÁ LOGADO
+            <!--VERIFICA SE USUÁRIO ESTÁ LOGADO-->
             <%
                 String email = (String) session.getAttribute("usuario");
                 if (email == null) {
                     response.sendRedirect("usuarioNaoLogado.html");
                 }
             %>
-            //MENU ESTILIZADO PARA CONTROLE DE FUNCIONÁRIOS
+            <!--MENU ESTILIZADO PARA CONTROLE DE FUNCIONÁRIOS-->
             <nav class="navbar navbar-expand navbar-dark bg-primary">
                 <div class="container-fluid">
                     <a href="menu.jsp" id="menu-toggle" class="navbar-brand"><span class="navbar-toggler-icon"></span></a>
@@ -49,7 +49,7 @@
                 </div>
             </nav>
         </header>
-        //MENU LATERAL PARA NAVEGAR ENTRE AS PRINCIPAIS FUNCIONALIDADES
+        <!--MENU LATERAL PARA NAVEGAR ENTRE AS PRINCIPAIS FUNCIONALIDADES-->
         <div id="wrapper" class="toggled">
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
@@ -58,12 +58,12 @@
                     <li><a href="folhaPagto.jsp">Folha Pagamento</a></li>
                 </ul>
             </div>
-            //TELA DE FUNCIONALIDADES DO DEPARTAMENTO
+            <!--TELA DE FUNCIONALIDADES DO DEPARTAMENTO-->
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <h2 class="card-title text-center">Departamento</h2>
 
-                    //INSERIR DEPARTAMENTO
+                    <!--INSERIR DEPARTAMENTO-->
                     <form action="inserirDepto.jsp">
                         <div class="form-group">
                             <label for="descDepto">Inserir Departamento</label>
@@ -73,7 +73,7 @@
                         <button type="reset" class="btn btn-secondary btn-block">Cancelar</button>
                     </form>
 
-                    //EXCLUIR DEPARTAMENTO
+                    <!--EXCLUIR DEPARTAMENTO-->
                     <form action="excluirDepto.jsp" method="get">
                         <div class="form-group">
                             <label for="idDepto">Excluir Departamento</label>
@@ -83,7 +83,7 @@
                         <button type="reset" class="btn btn-secondary btn-block">Cancelar</button>
                     </form>
 
-                    //ALTERAR DEPARTAMENTO
+                    <!--ALTERAR DEPARTAMENTO-->
                     <form action="alterarDepto.jsp" method="get">
                         <div class="form-group">
                             <label for="idDepto">Alterar Departamento</label>
@@ -94,7 +94,7 @@
                         <button type="reset" class="btn btn-secondary btn-block">Cancelar</button>
                     </form>
 
-                    //CONSULTAR DEPARTAMENTOS
+                    <!--CONSULTAR DEPARTAMENTOS-->
                     <div class="table-container">
                         <h4 class="text-center">Departamentos Cadastrados</h4>
                         <table class="table table-bordered">
@@ -104,7 +104,7 @@
                                     <th>Descrição</th>
                                 </tr>
                             </thead>
-                            //LISTA PARA CONSULTAR DEPARTAMENTO
+                            <!--LISTA PARA CONSULTAR DEPARTAMENTO-->
                             <tbody>
                                 <%
                                     Departamento dep = new Departamento();
@@ -125,7 +125,7 @@
                 </div>
             </div>
         </div>
-        //STYLE PARA EDITAR TABELA DE CONSULTA DOS DEPARTAMENTOS
+        <!--STYLE PARA EDITAR TABELA DE CONSULTA DOS DEPARTAMENTOS-->
         <style>
             .table-container {
                 border: 1px solid #ddd;

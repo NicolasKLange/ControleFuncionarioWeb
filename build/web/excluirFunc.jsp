@@ -6,7 +6,7 @@
 
 <%@page import="ControleFuncionario.Funcionario"%>
 
-//FUNÇÃO PARA EXCLUIR FUNCIONARIO
+<!--FUNÇÃO PARA EXCLUIR FUNCIONARIO-->
 <%
     int vIdFunc = Integer.parseInt(request.getParameter("idFunc"));
 
@@ -14,10 +14,10 @@
     fun.setIdFunc(vIdFunc);
 
     boolean excluiu = fun.excluirFuncionario();
-    
+
     //VERIFICA SE DEU CERTO EM EXCLUIR FUNCIONÁRIO
     if (excluiu) {
-        response.sendRedirect("Funcionario.jsp"); 
+        response.sendRedirect("Funcionario.jsp");
     } else {
         response.sendRedirect("Funcionario.jsp");
     }

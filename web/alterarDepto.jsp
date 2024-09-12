@@ -6,7 +6,7 @@
 
 <%@page import="ControleFuncionario.Departamento"%>
 
-//FUNÇÃO PARA ALTERAR DEPARTAMENTO
+<!--FUNÇÃO PARA ALTERAR DEPARTAMENTO-->
 <%
     int vIdDepto = Integer.parseInt(request.getParameter("idDepto"));
     String vDescDepto = request.getParameter("descDepto");

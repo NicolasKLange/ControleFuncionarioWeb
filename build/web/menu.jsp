@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
     <head>
-        //TITULO DA PÁGINA
+        <!--TITULO DA PÁGINA-->
         <meta charset="UTF-8">
         <title>Controle de Funcionário</title>
         <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'>
@@ -9,14 +9,14 @@
     </head>
     <body>
         <header>
-            //VERIFICA SE USUÁRIO ESTÁ LOGADO
+            <!--VERIFICA SE USUÁRIO ESTÁ LOGADO-->
             <%
                 String email = (String) session.getAttribute("usuario");
                 if (email == null) {
                     response.sendRedirect("usuarioNaoLogado.html");
                 }
             %>
-            //MENU ESTILIZADO PARA CONTROLE DE FUNCIONÁRIOS
+            <!--MENU ESTILIZADO PARA CONTROLE DE FUNCIONÁRIOS-->
             <nav class="navbar navbar-expand navbar-dark bg-primary">
                 <div class="container-fluid">
                     <a href="#menu-toggle" id="menu-toggle" class="navbar-brand"><span class="navbar-toggler-icon"></span></a>   
@@ -33,7 +33,7 @@
                 </div>
             </nav>
         </header>
-        //MENU LATERAL PARA NAVEGAR ENTRE AS PRINCIPAIS FUNCIONALIDADES
+        <!--MENU LATERAL PARA NAVEGAR ENTRE AS PRINCIPAIS FUNCIONALIDADES-->
         <div id="wrapper" class="toggled">
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
@@ -42,7 +42,7 @@
                     <li> <a href="folhaPagto.jsp">Folha Pagamento</a> </li>            
                 </ul>
             </div>
-            //TEXTO EXPLICATIVO BÁSICO DO SISTEMA
+            <!--TEXTO EXPLICATIVO BÁSICO DO SISTEMA-->
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <h1>Controle de Funcionário</h1>

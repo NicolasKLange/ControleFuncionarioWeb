@@ -4,18 +4,18 @@
     Author     : Marcio Schoenfelder
 --%>
 
-//FUNÇÃO PARA CADASTRAR USUARIO
+<!--FUNÇÃO PARA CADASTRAR USUARIO-->
 <%@page import="ControleFuncionario.Usuario"%>
 <%
-    String vEmail =  request.getParameter("email");
-    String vSenha =  request.getParameter("senha");
-    
+    String vEmail = request.getParameter("email");
+    String vSenha = request.getParameter("senha");
+
     Usuario usu = new Usuario();
     usu.setEmail(vEmail);
     usu.setSenha(vSenha);
-    
+
     //SE CADASTARAR REDIRECIONA PARA A TELA DE LOGIN
-    if (usu.incluirUsuario()){   
+    if (usu.incluirUsuario()) {
         response.sendRedirect("index.html");
     }
 
