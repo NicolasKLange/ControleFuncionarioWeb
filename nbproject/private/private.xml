@@ -2,6 +2,22 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/inserirDepto.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/excluirDepto.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/usuarioNaoCadastrado.html</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/excluirFunc.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/autenticarUsuario.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/menu.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/Funcionario.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/usuarioNaoLogado.html</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/inserirFunc.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/cadastraUsuario.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/alterarDepto.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/Departamento.jsp</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/index.html</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/signup.html</file>
+            <file>file:/C:/Users/nicolas_lange/Documents/NetBeansProjects/ControleFuncionarioWeb/web/alterarFunc.jsp</file>
+        </group>
     </open-files>
 </project-private>
