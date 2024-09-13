@@ -1,7 +1,7 @@
 <%-- 
     Document   : autenticarUsuario
     Created on : 9 de set. de 2024, 08:32:22
-    Author     : Professor
+    Author     : nicolas_lange
 --%>
 
 <!--FUNCÃO PARA AUTENTICAR USUÁRIO AO SISTEMA-->
